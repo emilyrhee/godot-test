@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3lrq3xs8krev"]
+[gd_scene load_steps=3 format=3 uid="uid://b3lrq3xs8krev"]
 
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_4j8xy"]
+[ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="1_lep73"]
 
 [node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_lep73")]
+z_index = 1
+position = Vector2(0, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("1_4j8xy")

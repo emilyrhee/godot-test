@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bto4c6kt8bdjc"]
+[gd_scene load_steps=6 format=3 uid="uid://bto4c6kt8bdjc"]
 
 [ext_resource type="Texture2D" uid="uid://dqc3bgmj6c6jn" path="res://images/DemoRpgCharacter.png" id="1_4ptda"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_iru3w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5p02e"]
 size = Vector2(10, 8.25)
@@ -27,7 +28,8 @@ _data = {
 "walk_down": SubResource("Animation_q5g3s")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_iru3w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(581, 333.125)
@@ -38,6 +40,7 @@ position = Vector2(581, 324)
 texture = ExtResource("1_4ptda")
 hframes = 4
 vframes = 5
+frame = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
