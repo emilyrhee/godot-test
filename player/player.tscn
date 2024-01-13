@@ -104,11 +104,10 @@ _data = {
 script = ExtResource("1_iru3w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(113, 71.125)
+position = Vector2(0, 9)
 shape = SubResource("RectangleShape2D_5p02e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(113, 62)
 texture = ExtResource("1_4ptda")
 hframes = 4
 vframes = 5
@@ -120,5 +119,4 @@ libraries = {
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(-13670.5, 38212.3)
-anchor_mode = 0
 zoom = Vector2(5, 5)
