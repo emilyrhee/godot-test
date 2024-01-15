@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3lrq3xs8krev"]
+[gd_scene load_steps=4 format=3 uid="uid://b3lrq3xs8krev"]
 
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_4j8xy"]
 [ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="1_lep73"]
+[ext_resource type="PackedScene" uid="uid://dpxud12jmclj1" path="res://npcs/enemies/skully.tscn" id="3_jde5k"]
 
 [node name="World" type="Node2D"]
 
@@ -18,3 +19,6 @@ layer_0/tile_data = PackedInt32Array(0, 131072, 2, 65536, 131072, 2, 131072, 131
 tile_set = ExtResource("1_4j8xy")
 format = 2
 layer_0/tile_data = PackedInt32Array(1638428, 1048576, 5, 1703964, 1048576, 6, 1769500, 1048576, 7, 1638429, 1114112, 5, 1703965, 1114112, 6, 1769501, 1114112, 7, 1638430, 1179648, 5, 1703966, 1179648, 6, 1769502, 1179648, 7, 1900572, 1376256, 25, 1900573, 1441792, 25, 1900574, 1507328, 25, 1507356, 1376256, 25, 1507357, 1441792, 25, 1507358, 1507328, 25, 1638432, 1966080, 23, 1703968, 1966080, 24, 1769504, 1966080, 25, 1638433, 2031616, 23, 1703969, 2031616, 24, 1769505, 2031616, 25, 1638434, 2097152, 23, 1703970, 2097152, 24, 1769506, 2097152, 25, 1638424, 1966080, 23, 1703960, 1966080, 24, 1769496, 1966080, 25, 1638425, 2031616, 23, 1703961, 2031616, 24, 1769497, 2031616, 25, 1638426, 2097152, 23, 1703962, 2097152, 24, 1769498, 2097152, 25)
+
+[node name="skully" parent="." instance=ExtResource("3_jde5k")]
+position = Vector2(224, 274)

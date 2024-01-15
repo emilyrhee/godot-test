@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpxud12jmclj1"]
+
+[ext_resource type="Texture2D" uid="uid://bugrmh0b2x5r1" path="res://images/Dungeon_Character_2.png" id="1_hh1g2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nahqk"]
+radius = 4.0
+
+[node name="skully" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="DungeonCharacter2" type="Sprite2D" parent="."]
+texture = ExtResource("1_hh1g2")
+hframes = 7
+vframes = 2
+frame = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_nahqk")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
