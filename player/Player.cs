@@ -33,6 +33,12 @@ public partial class Player : Godot.CharacterBody2D {
 		}
 	}
 
+    private void _on_area_2d_body_entered(Node2D body) {
+        if (body.IsInGroup("enemy")) {
+            GetTree().ChangeSceneToFile("res://npcs/enemies/battle.tscn");
+        }
+    }
+
 	public override void _Process(double delta) {
 		Vector2 inputVector = new Vector2(
 			Input.GetActionStrength("d") - Input.GetActionStrength("a"),
