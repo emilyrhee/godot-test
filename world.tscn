@@ -22,3 +22,5 @@ layer_0/tile_data = PackedInt32Array(1638428, 1048576, 5, 1703964, 1048576, 6, 1
 
 [node name="skully" parent="." instance=ExtResource("3_jde5k")]
 position = Vector2(224, 274)
+
+[editable path="Player"]
