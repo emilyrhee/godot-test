@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bto4c6kt8bdjc"]
+[gd_scene load_steps=10 format=3 uid="uid://bto4c6kt8bdjc"]
 
 [ext_resource type="Texture2D" uid="uid://dqc3bgmj6c6jn" path="res://images/DemoRpgCharacter.png" id="1_4ptda"]
 [ext_resource type="Script" path="res://player/Player.cs" id="1_iru3w"]
@@ -100,9 +100,6 @@ _data = {
 "walk_up": SubResource("Animation_1mext")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wj8cr"]
-size = Vector2(10, 7)
-
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_iru3w")
 
@@ -110,7 +107,6 @@ script = ExtResource("1_iru3w")
 position = Vector2(0, 9.5)
 scale = Vector2(0.993297, 1)
 shape = SubResource("RectangleShape2D_5p02e")
-disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_4ptda")
@@ -125,11 +121,3 @@ libraries = {
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(-13670.5, 38212.3)
 zoom = Vector2(5, 5)
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 9.5)
-shape = SubResource("RectangleShape2D_wj8cr")
-
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
