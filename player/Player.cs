@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Player : Godot.CharacterBody2D {
+public partial class Player : CharacterBody2D {
 	private int speed = 100;
 	private AnimationPlayer animation;
 
@@ -33,7 +33,7 @@ public partial class Player : Godot.CharacterBody2D {
 		}
 	}
 
-	public override void _Process(double delta) {
+    private void Move() {
 		Vector2 inputVector = new Vector2(
 			Input.GetActionStrength("d") - Input.GetActionStrength("a"),
 			Input.GetActionStrength("s") - Input.GetActionStrength("w")
@@ -41,6 +41,10 @@ public partial class Player : Godot.CharacterBody2D {
 
 		Velocity = inputVector * speed;
 		MoveAndSlide();
+    }
+
+	public override void _Process(double delta) {
+        Move();
 		UpdateAnimation();
 	}
 }
