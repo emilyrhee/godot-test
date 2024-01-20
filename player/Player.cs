@@ -3,6 +3,7 @@ using System;
 
 public partial class Player : CharacterBody2D {
 	private int speed = 100;
+    private int health = 30;
 	private AnimationPlayer animation;
 
 	public override void _Ready() {
