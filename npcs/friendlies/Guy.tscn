@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyglv2nas2x8l"]
+
+[ext_resource type="Texture2D" uid="uid://bugrmh0b2x5r1" path="res://images/Dungeon_Character_2.png" id="1_ok135"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fqmog"]
+size = Vector2(10, 7)
+
+[node name="Guy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+texture = ExtResource("1_ok135")
+hframes = 7
+vframes = 2
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_fqmog")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3lrq3xs8krev"]
+[gd_scene load_steps=5 format=3 uid="uid://b3lrq3xs8krev"]
 
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_4j8xy"]
-[ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="1_lep73"]
+[ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/Player.tscn" id="1_lep73"]
 [ext_resource type="PackedScene" uid="uid://dpxud12jmclj1" path="res://npcs/enemies/skully.tscn" id="3_jde5k"]
+[ext_resource type="PackedScene" uid="uid://dyglv2nas2x8l" path="res://npcs/friendlies/Guy.tscn" id="4_kmi6m"]
 
 [node name="World" type="Node2D"]
 
@@ -22,5 +23,8 @@ layer_0/tile_data = PackedInt32Array(1638428, 1048576, 5, 1703964, 1048576, 6, 1
 
 [node name="skully" parent="." instance=ExtResource("3_jde5k")]
 position = Vector2(224, 274)
+
+[node name="Guy" parent="." instance=ExtResource("4_kmi6m")]
+position = Vector2(272, 235)
 
 [editable path="Player"]

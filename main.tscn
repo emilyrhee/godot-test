@@ -6,17 +6,17 @@
 script = ExtResource("1_b1ych")
 
 [node name="Play" type="Button" parent="."]
-offset_left = 420.0
-offset_top = 259.0
-offset_right = 541.0
-offset_bottom = 375.0
+offset_left = 275.0
+offset_top = 254.0
+offset_right = 396.0
+offset_bottom = 370.0
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 622.0
-offset_top = 261.0
-offset_right = 743.0
-offset_bottom = 377.0
+offset_left = 477.0
+offset_top = 256.0
+offset_right = 598.0
+offset_bottom = 372.0
 text = "Quit
 "
 
