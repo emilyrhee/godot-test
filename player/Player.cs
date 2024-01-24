@@ -45,7 +45,10 @@ public partial class Player : CharacterBody2D {
     }
 
 	public override void _Process(double delta) {
-        Move();
+        if (GetParent().Name != "Battle") {
+            Move();
+        }
+
 		UpdateAnimation();
 	}
 }

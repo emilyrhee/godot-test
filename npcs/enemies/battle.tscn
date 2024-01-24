@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://npcs/enemies/battle.cs" id="1_eorti"]
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_xp0wb"]
-[ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/Player.tscn" id="2_nv4g6"]
+[ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="2_nv4g6"]
 [ext_resource type="PackedScene" uid="uid://dpxud12jmclj1" path="res://npcs/enemies/skully.tscn" id="3_ypt3i"]
 
 [node name="Battle" type="Node2D" groups=["battle"]]
