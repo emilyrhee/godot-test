@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://brfdpu37lr6d5"]
+[gd_scene load_steps=6 format=3 uid="uid://brfdpu37lr6d5"]
 
 [ext_resource type="Script" path="res://npcs/enemies/battle.cs" id="1_eorti"]
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_xp0wb"]
 [ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="2_nv4g6"]
 [ext_resource type="PackedScene" uid="uid://dpxud12jmclj1" path="res://npcs/enemies/skully.tscn" id="3_ypt3i"]
+[ext_resource type="Texture2D" uid="uid://ch8mipycxx4ck" path="res://images/ui/battle_box.png" id="5_e6ii0"]
 
 [node name="Battle" type="Node2D" groups=["battle"]]
 script = ExtResource("1_eorti")
@@ -26,5 +27,10 @@ enabled = false
 [node name="skully" parent="." instance=ExtResource("3_ypt3i")]
 position = Vector2(533, 258)
 scale = Vector2(5, 5)
+
+[node name="Box" type="Sprite2D" parent="."]
+position = Vector2(400, 508)
+scale = Vector2(5, 5)
+texture = ExtResource("5_e6ii0")
 
 [editable path="Player"]
