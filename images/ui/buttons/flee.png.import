@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgeo4a53smc1"
-path="res://.godot/imported/item.png-7a2b387da528d81d3c91431738021e8a.ctex"
+uid="uid://buebdnia5m3pe"
+path="res://.godot/imported/flee.png-1ea22ad492407e965ca5f547fffaa8df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/item.png"
-dest_files=["res://.godot/imported/item.png-7a2b387da528d81d3c91431738021e8a.ctex"]
+source_file="res://images/ui/buttons/flee.png"
+dest_files=["res://.godot/imported/flee.png-1ea22ad492407e965ca5f547fffaa8df.ctex"]
 
 [params]
 

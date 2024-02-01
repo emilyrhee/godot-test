@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://brfdpu37lr6d5"]
+[gd_scene load_steps=9 format=3 uid="uid://brfdpu37lr6d5"]
 
 [ext_resource type="Script" path="res://npcs/enemies/battle.cs" id="1_eorti"]
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_xp0wb"]
 [ext_resource type="PackedScene" uid="uid://bto4c6kt8bdjc" path="res://player/player.tscn" id="2_nv4g6"]
 [ext_resource type="PackedScene" uid="uid://dpxud12jmclj1" path="res://npcs/enemies/skully.tscn" id="3_ypt3i"]
 [ext_resource type="Texture2D" uid="uid://ch8mipycxx4ck" path="res://images/ui/battle_box.png" id="5_e6ii0"]
+[ext_resource type="Texture2D" uid="uid://6di2wrbrhqma" path="res://images/ui/buttons/fight.png" id="6_8bql6"]
+[ext_resource type="Texture2D" uid="uid://bgeo4a53smc1" path="res://images/ui/buttons/item.png" id="7_i30dq"]
+[ext_resource type="Texture2D" uid="uid://buebdnia5m3pe" path="res://images/ui/buttons/flee.png" id="8_wtw1h"]
 
 [node name="Battle" type="Node2D" groups=["battle"]]
 script = ExtResource("1_eorti")
@@ -29,8 +32,26 @@ position = Vector2(533, 258)
 scale = Vector2(5, 5)
 
 [node name="Box" type="Sprite2D" parent="."]
-position = Vector2(400, 508)
+position = Vector2(400, 490)
 scale = Vector2(5, 5)
 texture = ExtResource("5_e6ii0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 660.0
+offset_top = 396.0
+offset_right = 785.0
+offset_bottom = 584.0
+
+[node name="Fight" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("6_8bql6")
+
+[node name="Item" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_i30dq")
+
+[node name="Flee" type="TextureButton" parent="VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("8_wtw1h")
 
 [editable path="Player"]
