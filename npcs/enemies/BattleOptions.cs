@@ -11,5 +11,6 @@ public partial class BattleOptions : VBoxContainer {
 
     private void _on_fight_pressed() {
         GD.Print("hi");
+        Visible = false;
     }
 }
