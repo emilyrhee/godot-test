@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://brfdpu37lr6d5"]
+[gd_scene load_steps=14 format=3 uid="uid://brfdpu37lr6d5"]
 
 [ext_resource type="Script" path="res://npcs/enemies/battle.cs" id="1_eorti"]
 [ext_resource type="TileSet" uid="uid://d81xa6uayml4" path="res://images/world.tres" id="1_xp0wb"]
@@ -11,14 +11,10 @@
 [ext_resource type="Script" path="res://npcs/enemies/BattleOptions.cs" id="6_aqmxr"]
 [ext_resource type="Texture2D" uid="uid://bgeo4a53smc1" path="res://images/ui/buttons/item.png" id="7_i30dq"]
 [ext_resource type="Texture2D" uid="uid://buebdnia5m3pe" path="res://images/ui/buttons/flee.png" id="8_wtw1h"]
-[ext_resource type="Texture2D" uid="uid://c7i8folk0xxsu" path="res://images/ui/taiko/ka.png" id="11_v15ue"]
-[ext_resource type="Script" path="res://npcs/enemies/Ka.cs" id="12_ob3nb"]
+[ext_resource type="PackedScene" uid="uid://beqe5p8wc5sx2" path="res://ka.tscn" id="12_ge6c6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fk2pf"]
 size = Vector2(18.6, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7jia"]
-size = Vector2(0.800001, 5.52)
 
 [node name="Battle" type="Node2D" groups=["battle"]]
 script = ExtResource("1_eorti")
@@ -88,24 +84,8 @@ layout_mode = 2
 focus_neighbor_top = NodePath("../Item")
 texture_normal = ExtResource("8_wtw1h")
 
-[node name="Ka" type="Sprite2D" parent="."]
-z_index = 2
-position = Vector2(515, 491)
-scale = Vector2(5, 5)
-texture = ExtResource("11_v15ue")
-script = ExtResource("12_ob3nb")
-
-[node name="Area2D" type="Area2D" parent="Ka"]
-z_index = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ka/Area2D"]
-z_index = 1
-position = Vector2(-12, 0.199997)
-scale = Vector2(5, 5)
-shape = SubResource("RectangleShape2D_k7jia")
+[node name="Ka" parent="." instance=ExtResource("12_ge6c6")]
 
 [connection signal="pressed" from="BattleOptions/Fight" to="BattleOptions" method="_on_fight_pressed"]
-[connection signal="area_entered" from="Ka/Area2D" to="Ka" method="_on_area_entered"]
-[connection signal="area_exited" from="Ka/Area2D" to="Ka" method="_on_area_2d_area_exited"]
 
 [editable path="Player"]

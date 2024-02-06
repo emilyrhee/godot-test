@@ -12,7 +12,6 @@ public partial class Ka : Sprite2D {
     }
 	public override void _Process(double delta) {
         if (isInArea && Input.IsActionPressed("ka")) {
-            GD.Print("hi");
             QueueFree();
         }
 
