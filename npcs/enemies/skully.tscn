@@ -9,7 +9,7 @@ radius = 3.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_tl470"]
 radius = 1.0
 
-[node name="skully" type="CharacterBody2D" groups=["enemy"]]
+[node name="Skully" type="CharacterBody2D" groups=["enemy"]]
 script = ExtResource("1_21l43")
 
 [node name="DungeonCharacter2" type="Sprite2D" parent="."]

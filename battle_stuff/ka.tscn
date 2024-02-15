@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://beqe5p8wc5sx2"]
 
 [ext_resource type="Texture2D" uid="uid://c7i8folk0xxsu" path="res://images/ui/taiko/ka.png" id="1_ixddb"]
-[ext_resource type="Script" path="res://npcs/enemies/Ka.cs" id="2_phson"]
+[ext_resource type="Script" path="res://battle_stuff/Ka.cs" id="2_phson"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k7jia"]
 size = Vector2(0.800001, 5.52)

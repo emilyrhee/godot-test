@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://bfhc4ekk3y7jc"]
 
-[ext_resource type="Script" path="res://StartMenu.cs" id="1_b1ych"]
+[ext_resource type="Script" path="res://menus/StartMenu.cs" id="1_ps8xa"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_b1ych")
+script = ExtResource("1_ps8xa")
 
 [node name="StartMenuButtons" type="VBoxContainer" parent="."]
 offset_left = 200.0
